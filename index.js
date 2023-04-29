@@ -22,7 +22,7 @@ app.get('/news', (req, res) => {
 
 app.get('/news/:id', (req, res) => {
     const id = req.params.id;
-    // console.log(id);
+    // console.log(id); 
     const selectedNews = news.find(n => n._id === id);
     res.send(selectedNews);
 })
@@ -42,3 +42,6 @@ app.get('/categories/:id', (req, res) => {
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })
+
+
+//  for amni
